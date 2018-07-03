@@ -1,0 +1,8 @@
+signatures:
+  image: genny-project/signatures
+  environment:
+    - S3_BUCKET=AWS_BUCKET_HERE
+    - AWS_ACCESS_KEY_ID=AWS_KEY_HERE
+    - AWS_SECRET_ACCESS_KEY=AWS_SECRET_HERE
+  ports:
+    - "7446:7446"
