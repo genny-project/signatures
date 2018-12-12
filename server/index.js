@@ -8,7 +8,7 @@ const s3 = new AWS.S3();
 const uuid = require( 'uuid/v4' );
 
 const app = express();
-app.use( bodyParser.json());
+app.use( bodyParser.json({ limit: '5mb' }));
 app.use( cors());
 
 
