@@ -8,9 +8,8 @@ const s3 = new AWS.S3();
 const uuid = require( 'uuid/v4' );
 
 const app = express();
-app.use( bodyParser.json({ limit: '5mb' }));
+app.use( bodyParser.json({ limit: '5mb' })); // increase data request limit to 5mb
 app.use( cors());
-
 
 app.get( '/', ( req, res ) => {
   res.json({
